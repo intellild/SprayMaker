@@ -31,7 +31,6 @@ namespace GUI
                 generator.ProcessProgress += process_process;
                 generator.ProcessingComplete += process_comlete;
                 generator.Process(checkBox1.Checked);
-                //generator.Dispose();
             }
             else
             {
@@ -39,14 +38,13 @@ namespace GUI
                 generator.ProcessProgress += process_process;
                 generator.ProcessingComplete += process_comlete;
                 generator.Process(checkBox1.Checked);
-                //generator.Dispose();
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "图片|*.jpg;*.png;*.gif|C#文件|*.cs|所有文件|*.*";
+            openFileDialog.Filter = "图片|*.jpg;*.png;*.gif|所有文件|*.*";
             openFileDialog.RestoreDirectory = true;
             openFileDialog.FilterIndex = 1;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -70,7 +68,7 @@ namespace GUI
         private void button4_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "图片|*.jpg;*.png;*.gif|C#文件|*.cs|所有文件|*.*";
+            openFileDialog.Filter = "图片|*.jpg;*.png;*.gif|所有文件|*.*";
             openFileDialog.RestoreDirectory = true;
             openFileDialog.FilterIndex = 1;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -86,7 +84,7 @@ namespace GUI
 
         private void process_process(object sender, ProcessProgressEventArgs args)
         {
-            label4.Text = string.Format("{0}%", args.PercentComplete);
+            label4.Text = string.Format("{0:P}", args.PercentComplete);
         }
     }
 }
