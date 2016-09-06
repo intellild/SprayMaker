@@ -179,6 +179,7 @@ namespace ExplodingJelly.SprayGenerator
                 _largeInputFile.Close();
 
             ProcessingComplete(null, new ProcessCompleteEventArgs { outputStream = _output._outputStream, ImageSize = _baseImageSize, Animated = _imageFrames > 1, Fading = _largeInputFile != null });
+            _output.Close();
         }
 
         private void LoadImage(Stream inputStream, int maxSize, bool resetBaseImageSize = true)

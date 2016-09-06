@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -61,7 +62,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(138, 167);
+            this.textBox2.Location = new System.Drawing.Point(138, 161);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(318, 21);
             this.textBox2.TabIndex = 2;
@@ -72,17 +73,17 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "选择文件";
+            this.button2.Text = "浏览";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(462, 165);
+            this.button3.Location = new System.Drawing.Point(462, 159);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
-            this.button3.Text = "保存文件";
+            this.button3.Text = "浏览";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -93,23 +94,23 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(54, 16);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "alpha";
+            this.checkBox1.Text = "Alpha";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(138, 131);
+            this.textBox3.Location = new System.Drawing.Point(138, 125);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(318, 21);
             this.textBox3.TabIndex = 6;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(462, 129);
+            this.button4.Location = new System.Drawing.Point(462, 123);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 7;
-            this.button4.Text = "选择文件";
+            this.button4.Text = "浏览";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -125,7 +126,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 134);
+            this.label2.Location = new System.Drawing.Point(70, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 9;
@@ -134,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 170);
+            this.label3.Location = new System.Drawing.Point(70, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 10;
@@ -148,11 +149,21 @@
             this.label4.Size = new System.Drawing.Size(0, 12);
             this.label4.TabIndex = 11;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(52, 57);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(569, 12);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "可以使用jpg、png、gif作为输入文件。图片1是远近图中的远图，图片2是近图。不做远近图把图片2留空。";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 431);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -186,6 +197,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
